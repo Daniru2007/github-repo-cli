@@ -1,0 +1,1 @@
+curl https://api.github.com/user/repos  -H "Authorization: token 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" -H "Content-Type: application/json" -H "Accept: application/json" --data "{\"name\":\"BasicOperations\"}"
