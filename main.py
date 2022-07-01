@@ -12,11 +12,10 @@ dir = input("directory('.') $ ") or "."
 data = "{\"name\":\""+name+"\"}"
 
 r = requests.post("https://api.github.com/user/repos", data=data, headers=headers).json()
-print(r)
+
 try:
     pyperclip.copy(r["html_url"])
 except Exception as e:
-    print(e)
     print(f"[ERROR] repository {name} already exits")
     exit()
 
