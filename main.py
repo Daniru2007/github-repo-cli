@@ -2,8 +2,10 @@ import os
 import requests
 import pyperclip
 
+token = "[YOUR_TOKEN_HERE]"
+
 headers = {
-    "Authorization": f"token {open('token.txt').read()}",
+    "Authorization": f"token {token}",
     "Content-type": "application/json",
     "Accept": "application/json",
 }
