@@ -2,6 +2,8 @@ import os
 import requests
 import pyperclip
 
+# go to github settings -> Developer settings -> Personal Access Tokens -> Generate new token
+# set this token variable to your token
 token = "[YOUR_TOKEN_HERE]"
 
 headers = {
