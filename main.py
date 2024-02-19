@@ -26,6 +26,6 @@ except Exception as e:
 os.chdir(dir)
 os.system(f"git init .")
 os.system(f"git remote add origin {r['html_url']}.git")
-os.system(f'git add .')
+os.system(f'git add -A')
 os.system(f'git commit -m "setup"')
 os.system(f"git push -u origin main")
